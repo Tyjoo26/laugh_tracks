@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Comedians Index</title>
+  </head>
+  <header>
+    <h2>
+    Comedians Index
+    </h2>
+  
+  </header>
+  <body>
+    <p>
+      <% @comedians.each do |comedian| %>
+      <h4><%= comedian.name %></h4>
+      <p>Comedian age: <%= comedian.age %></p>
+      <p>List of Specials: <%= comedian.specials.name %></p>
+      <p># of Specials: <%= comedian.specials.count %></p>
+      <% end %>
+    </p>
+  </body>
+</html>
