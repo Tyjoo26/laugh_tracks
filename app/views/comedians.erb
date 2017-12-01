@@ -1,0 +1,15 @@
+
+    <% @comedians.each do |comedian| %>
+    <h3> <%= comedian.name %></h3>
+    Comedian Age:  <%= comedian.age %><br>
+    # of Specials:  <%= comedian.specials.count %><br>
+    <br>
+    List of Specials:
+    <br>
+    <% comedian.specials.each do |special| %>
+    <%= special.name %><br>
+    <% end %>
+    <% end %>
+    <br>
+    <br>
+<strong>Comedian Average Age: <%= @comedians.average_age %></strong>
